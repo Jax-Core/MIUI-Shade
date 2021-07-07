@@ -12,7 +12,7 @@ Animation=1
 KeyHook=1
 HotKey=LWin Shift
 
-ColorMode=1
+ColorMode=0
 MainColor=235, 235, 235
 OnColor=0, 118, 205
 OffColor=211, 211, 211
