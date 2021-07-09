@@ -1,9 +1,10 @@
 [Variables]
 @includeV=#@#Vars.inc
 @includeVer=#@#Version.inc
+SettingsSize=(#SCREENAREAWIDTH#/1920)
 SetTP=20
-SetW=(1200*#SCREENAREAWIDTH#/1920)
-SetH=(700*#SCREENAREAWIDTH#/1920)
+SetW=(1200*#SettingsSize#)
+SetH=(700*#SettingsSize#)
 SetL=200
 SetR=20
 SetSH=(#SetH#+#SetTP#*2)
