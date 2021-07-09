@@ -9,14 +9,14 @@ NPName=Spotify
 Weather=1
 Music=1
 Animation=1
-KeyHook=1
+KeyHook=0
 HotKey=LWin Shift
 
-ColorMode=1
-MainColor=235, 235, 235
+ColorMode=0
+MainColor=34, 34, 36
 OnColor=0, 118, 205
-OffColor=211, 211, 211
-OppositeColor=0,0,0
+OffColor=51, 51, 53
+OppositeColor=240,240,240
 
 P=40
 R=10
