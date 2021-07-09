@@ -1,6 +1,3 @@
-# 
-Rainmeter 
-
 <h1 align="center">
   Plainext
 </h1>
