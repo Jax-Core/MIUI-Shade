@@ -6,6 +6,7 @@ Meter=Shape
 X=r
 Y=#GlobalP#R
 Shape=Rectangle 0,0,#ShadeW#,#SimpleH#,(#R#*1.5),(#R#*1.5) | StrokeWidth 0
+Group=UpdateC
 Hidden=1
 
 [UpdateB]
@@ -13,6 +14,8 @@ Meter=Shape
 Shape=Rectangle 0,0,#ShadeW#,#SimpleH# | StrokeWidth 0 | Fill Color #MainColor#
 Container=UpdateC
 Leftmouseupaction=[https://github.com/EnhancedJax/MIUI-Shade/releases/latest]
+Hidden=1
+Group=UpdateC
 
 [Update]
 meter=Image
@@ -23,6 +26,8 @@ W=(16*#scale#)
 H=(16*#scale#)
 ImageTint=#OppositeColor#
 Container=UpdateC
+Hidden=1
+Group=UpdateC
 
 [UpdateHead]
 Meter=String
@@ -37,6 +42,8 @@ Text=System
 FontSize=(8*#scale#)
 FontColor=#OppositeColor#
 Container=UpdateC
+Hidden=1
+Group=UpdateC
 
 [UpdateMAin]
 Meter=String
@@ -54,6 +61,8 @@ InlineSetting=Size | (10*#scale#)
 InlinePattern2=#CRLF#(.*)
 InlineSetting2=Color | #OppositeColor#,150
 Container=UpdateC
+Hidden=1
+Group=UpdateC
 
 
 ;====================================
@@ -63,7 +72,7 @@ Container=UpdateC
 [UpdateWeb]
 Measure=WebParser
 URL=https://api.github.com/repos/EnhancedJax/MIUI-Shade/releases/latest
-RegExp=(?siU)\{.*"tag_name":"(.*)".*}
+RegExp=(?siU)\{.*"tag_name":"v(.*)".*}
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
 FinishAction=[!Delay 1000][!EnableMeasure mC4U][!UpdateMeasure mC4U]
 
@@ -75,14 +84,10 @@ UpdateDivider=(#Animation# = 1 ? 50 : 1)
 
 [mC4U]
 Measure=Calc
-Formula=[mVer]
 DynamicVariables=1
 Disabled=1
 IfconditionMode=1
-Ifcondition=mC4U = #Version#
-IfTrueAction=[!SetOption Subheader Text "U2D - #Version#"][!UpdateMeter *][!Redraw]
-IfCondition2=mC4U < #Version#
-IfTrueAction2=
-IfCondition3=mC4U > #Version#
-IfTrueAction3=[!ShowMeter UpdateC][!Redraw]
-IfNotMatchAction=
+IfCondition=mC4U < #Version#
+IfTrueAction=[!ShowMeterGroup UpdateC][!SetOption UpdateMAin Text "You are currently on a beta build.#CRLF#Build might not be stable"][!UpdateMEter UpdateMAin][!Redraw]
+IfCondition2=mC4U > #Version#
+IfTrueAction2=[!ShowMeterGroup UpdateC][!Redraw]

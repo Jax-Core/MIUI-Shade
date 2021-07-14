@@ -5,7 +5,7 @@ Plugin=WebNowPlaying
 PlayerType=Cover
 DefaultPath=#@#Images\Default.png
 CoverPath=#@#Images\Cover.png
-OnChangeAction=[!UpdateMeter MusicImg][!Redraw]
+OnChangeAction=[!SetOption MainC Path "[#CURRENTSECTION#]"][!UpdateMeter MusicImg][!Redraw]
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
 
 [mState]
@@ -26,7 +26,9 @@ UpdateDivider=(#Animation# = 1 ? 50 : 1)
 [mArtist]
 Measure=Plugin
 Plugin=WebNowPlaying
+OnchangeAction=[!UpdateMeasureGroup Music][!UpdateMeter *][!Redraw]
 PlayerType=Artist
+Substitute="":"Fetching..."
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
 
 [mTrack]
@@ -34,6 +36,7 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Title
 OnChangeAction=[!UpdateMeter *][!Redraw]
+Substitute="":"Fetching..."
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
 
 [mProgress]

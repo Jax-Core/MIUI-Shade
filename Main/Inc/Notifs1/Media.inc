@@ -8,7 +8,7 @@
 Measure=Plugin
 Plugin=Chameleon
 Type=File
-Path=[mCover]
+Path=#@#Images\Default.png
 Format=Dec
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
 

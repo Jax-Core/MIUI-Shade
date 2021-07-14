@@ -41,7 +41,7 @@ Container=C
 Measure=Plugin
 Plugin=Win7AudioPlugin
 DynamicVariables=1
-OnChangeAction=[!Setvariable SliderX ([mVolume:]/100*#SliderW#+#SliderM#)][!UpdateMeter MainBar][!Redraw]
+OnChangeAction=[!Setvariable SliderX ([mVolume:]/100*#ShadeW#+#SliderM#)][!UpdateMeter MainBar][!Redraw]
 UpdateDivider=50
 
 

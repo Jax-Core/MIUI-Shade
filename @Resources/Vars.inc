@@ -10,6 +10,7 @@ Weather=1
 Music=1
 Animation=1
 KeyHook=0
+HideOnFullScreen=1
 HotKey=LWin Shift
 
 ColorMode=0
