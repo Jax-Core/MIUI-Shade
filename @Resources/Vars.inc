@@ -1,6 +1,6 @@
 [Variables]
 Scale=1
-2412=H
+2412=I
 ;I H
 
 Player=WNP

@@ -69,25 +69,27 @@ Group=UpdateC
 
 
 
-[UpdateWeb]
+
+[WebParser]
 Measure=WebParser
-URL=https://api.github.com/repos/EnhancedJax/MIUI-Shade/releases/latest
-RegExp=(?siU)\{.*"tag_name":"v(.*)".*}
-UpdateDivider=(#Animation# = 1 ? 50 : 1)
+URL=https://raw.githubusercontent.com/EnhancedJax/#Skin.Name#/main/%40Resources/Version.inc
+RegExp==(.*)$
 FinishAction=[!Delay 1000][!EnableMeasure mC4U][!UpdateMeasure mC4U]
 
 [mVer]
 Measure=WebParser
-URL=[UpdateWeb]
+URL=[WebParser]
 StringIndex=1
-UpdateDivider=(#Animation# = 1 ? 50 : 1)
 
 [mC4U]
 Measure=Calc
+Formula=[mVer]
 DynamicVariables=1
 Disabled=1
 IfconditionMode=1
-IfCondition=mC4U < #Version#
-IfTrueAction=[!ShowMeterGroup UpdateC][!SetOption UpdateMAin Text "You are currently on a beta build.#CRLF#Build might not be stable"][!UpdateMEter UpdateMAin][!Redraw]
-IfCondition2=mC4U > #Version#
-IfTrueAction2=[!ShowMeterGroup UpdateC][!Redraw]
+Ifcondition=mC4U = #Version#
+IfTrueAction=[!Log "MIUI-Shade up2Date"]
+IfCondition2=mC4U < #Version#
+IfTrueAction2=[!ShowMeterGroup UpdateC][!SetOption UpdateMAin Text "You are currently on a beta build.#CRLF#Build might not be stable"][!UpdateMEter UpdateMAin][!Redraw]
+IfCondition3=mC4U > #Version#
+IfTrueAction3=[!ShowMeterGroup UpdateC][!Redraw]

@@ -26,7 +26,7 @@ W=(24*#Scale#)
 H=(24*#Scale#)
 SolidColor=0,0,0,1
 Container=C
-LeftMouseUpAction=[!ActivateConfig "MIUI-Shade\@Settings" "Info.ini"][!DeactivateConfig]
+LeftMouseUpAction=[!WriteKeyValue Variables Skin.Name #ROOTCONFIG# "#SKINSPATH##JaxCore\@Resources\SecVar.inc"][!WriteKeyValue Variables Skin.Set_Page Info "#SKINSPATH##JaxCore\@Resources\SecVar.inc"][!ActivateConfig "#JaxCore\Main" "Settings.ini"][!UpdateMeasure mToggle]
 
 
 [mBattery]
