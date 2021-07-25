@@ -72,7 +72,7 @@ Group=UpdateC
 
 [WebParser]
 Measure=WebParser
-URL=https://raw.githubusercontent.com/EnhancedJax/#Skin.Name#/main/%40Resources/Version.inc
+URL=https://raw.githubusercontent.com/EnhancedJax/MIUI-Shade/main/%40Resources/Version.inc
 RegExp==(.*)$
 FinishAction=[!Delay 1000][!EnableMeasure mC4U][!UpdateMeasure mC4U]
 

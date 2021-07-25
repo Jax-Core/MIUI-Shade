@@ -9,9 +9,7 @@ NPName=Spotify
 Weather=1
 Music=1
 Animation=1
-KeyHook=0
 HideOnFullScreen=1
-HotKey=LWin Shift
 
 ColorMode=0
 MainColor=34, 34, 36
@@ -30,3 +28,11 @@ WeatherLocation=Hong Kong
 WeatherUnits=Metric
 ; The units of the weather info. Valid values are "Metric" and "Imperial".
 Language=en
+
+TweenTime1=300
+Easing=InOutSine
+BlurBool=0
+BlurType=Blur
+
+Detect.Location=0
+Detect.Size=10
