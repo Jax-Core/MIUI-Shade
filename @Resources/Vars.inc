@@ -22,7 +22,7 @@ R=10
 GlobalP=10
 ShadeW=(450*#scale#)
 
-WeatherLocation=Hong Kong
+WeatherLocation=melbourne
 ; Just enter your city's name or your address here or whatever. Anything should work here.
 ; TIP: Check Rainmeter's log to see what location it got.
 WeatherUnits=Metric
@@ -31,8 +31,8 @@ Language=en
 
 TweenTime1=300
 Easing=InOutSine
-BlurBool=0
-BlurType=Blur
+BlurBool=1
+BlurType=Acrylic
 
 Detect.Location=0
 Detect.Size=10
