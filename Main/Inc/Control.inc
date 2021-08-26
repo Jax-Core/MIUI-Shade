@@ -55,8 +55,8 @@ MeterStyle=CtrlImg
 Meter=Shape
 MeterStyle=CtrlCirc
 Fill=Fill Color #OffColor#
-LeftMouseUpAction=[!UpdateMEasure mToggle][!Delay #TweenTime1#]["#@#Actions\AHK.exe" "#@#Actions\Source Code\Snip.ahk"]
-RightMouseUpAction=["#@#Actions\AHK.exe" "#@#Actions\Source Code\Snip.ahk"]
+LeftMouseUpAction=[!UpdateMEasure mToggle][!Delay #TweenTime1#]["#@#Actions\AHKv1.exe" "#@#Actions\Source Code\Snip.ahk"]
+RightMouseUpAction=["#@#Actions\AHKv1.exe" "#@#Actions\Source Code\Snip.ahk"]
 [ImgScreenshot]
 Meter=Image
 ImageName=#@#Icons\Screenshot.png

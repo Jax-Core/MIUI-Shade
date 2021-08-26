@@ -34,5 +34,5 @@ Easing=InOutSine
 BlurBool=1
 BlurType=Acrylic
 
-Detect.Location=0
+Detect.Location=1
 Detect.Size=10
