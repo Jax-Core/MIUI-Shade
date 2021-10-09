@@ -29,10 +29,11 @@ WeatherUnits=Metric
 ; The units of the weather info. Valid values are "Metric" and "Imperial".
 Language=en
 
-TweenTime1=300
+TweenTime1=500
 Easing=InOutSine
 BlurBool=1
 BlurType=Acrylic
 
 Detect.Location=1
 Detect.Size=10
+Error=1
