@@ -59,7 +59,7 @@ Plugin=Mouse
 ; this measure uses the Plugin:Mouse
 LeftMouseDragAction=[!SetVariable SliderX "(Clamp(($MouseX$),(#SliderM#),((#SliderM#)+#ShadeW#)))"][!UpdateMeasure SliderPercent]
 ; actions to be executed when the mouse drags. The first bang gets the mouse value and make sure it's in the slider. The bangs after that updates the required measures and the slider.
-LeftMouseUpAction=[!CommandMeasure VolumeMouse "Stop"]
+LeftMouseUpAction=[!SetVariable SliderX "(Clamp(($MouseX$),(#SliderM#),((#SliderM#)+#ShadeW#)))"][!UpdateMeasure SliderPercent][!CommandMeasure VolumeMouse "Stop"]
 ; actions to be executed after the mouse click is lifted. The first bang stops the measure to retrieve information from mouse dragging.
 RelativeToSkin=1
 RequireDragging=1

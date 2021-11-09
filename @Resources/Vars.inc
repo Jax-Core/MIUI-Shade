@@ -8,7 +8,7 @@ NPName=Spotify
 
 Weather=1
 Music=1
-Animation=1
+Animation=0
 HideOnFullScreen=1
 
 ColorMode=0
@@ -34,6 +34,5 @@ Easing=InOutSine
 BlurBool=1
 BlurType=Acrylic
 
-Detect.Location=1
 Detect.Size=10
-Error=1
+ScreenNumber=1

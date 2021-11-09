@@ -26,7 +26,7 @@ UpdateDivider=(#Animation# = 1 ? 50 : 1)
 [mArtist]
 Measure=Plugin
 Plugin=WebNowPlaying
-OnchangeAction=[!UpdateMeasureGroup Music][!UpdateMeter *][!Redraw]
+OnchangeAction=[!UpdateMeasureGroup Music][!UpdateMeterGroup DynamicColors][!Redraw][!Redraw]
 PlayerType=Artist
 Substitute="":"Fetching..."
 UpdateDivider=(#Animation# = 1 ? 50 : 1)

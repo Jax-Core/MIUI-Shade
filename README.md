@@ -1,5 +1,5 @@
 <h1 align="center">
-  Plainext
+  MIUI-Shade
 </h1>
 
 <h4 align="center">Download Now!</h4>

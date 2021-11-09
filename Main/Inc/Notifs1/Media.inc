@@ -8,9 +8,10 @@
 Measure=Plugin
 Plugin=Chameleon
 Type=File
-Path=#@#Images\Default.png
+Path=#@#Images\Cover.png
 Format=Dec
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 [LC1]
 Measure=Plugin
@@ -18,6 +19,7 @@ Plugin=Chameleon
 Parent=MainC
 Color=Light1
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 [BGC]
 Measure=Plugin
@@ -25,6 +27,7 @@ Plugin=Chameleon
 Parent=MainC
 Color=Background1
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 [FGC1]
 Measure=Plugin
@@ -32,6 +35,7 @@ Plugin=Chameleon
 Parent=MainC
 Color=Foreground1
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 [FGC2]
 Measure=Plugin
@@ -39,6 +43,7 @@ Plugin=Chameleon
 Parent=MainC
 Color=Foreground2
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 ; [AvC]
 ; Measure=Plugin
@@ -52,8 +57,8 @@ Measure=Plugin
 Plugin=Chameleon
 Parent=MainC
 Color=Luminance
-OnChangeAction=[!UpdateMeterGroup DynamicColors]
 UpdateDivider=(#Animation# = 1 ? 50 : 1)
+Group=Music
 
 ; [BackgroundColor]
 ; Measure=Calc
