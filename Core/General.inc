@@ -54,7 +54,9 @@ MeterStyle=Set.String:S |  Set.OptionCat:S
 Meter=String
 Text=Time format: 24(H) 12(I)
 MeterStyle=Set.String:S | Set.OptionName:S
-
+[Set.Div:S19032213138]
+Meter=Shape
+MeterStyle=Set.Div:S
 [Option21]
 Meter=String
 Text=Show weather notification
@@ -142,13 +144,13 @@ Y=([Option11:Y]-#Set.P#+(-30/2+8)*[Set.S])
 [2412:0]
 Meter=String
 Text=12-Hour
-FontColor=([&Func:returnBool('2412', 'H')] = 0 ? 0 : 255),([&Func:returnBool('2412', 'H')] = 0 ? 0 : 255),([&Func:returnBool('2412', 'H')] = 0 ? 0 : 255)
+FontColor=[&Func:returnBool('2412', 'H', '#Set.Text_Color#', '#Set.Pri_color#')]
 LeftMouseUpAction=[&Func:GroupVar('#CURRENTSECTION#', '0Act')][!Refresh][!UpdateMeasure Auto_Refresh:M]
 MeterStyle=Set.String:S | Set.PickOption_0:S
 [2412:1]
 Meter=String
 Text=24-hour
-FontColor=([&Func:returnBool('2412', 'H')] = 1 ? 0 : 255),([&Func:returnBool('2412', 'H')] = 1 ? 0 : 255),([&Func:returnBool('2412', 'H')] = 1 ? 0 : 255)
+FontColor=[&Func:returnBool('2412', 'H', '#Set.Pri_color#', '#Set.Text_Color#')]
 LeftMouseUpAction=[&Func:GroupVar('#CURRENTSECTION#', '1Act')][!Refresh][!UpdateMeasure Auto_Refresh:M]
 MeterStyle=Set.String:S | Set.PickOption_1:S
 
