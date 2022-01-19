@@ -7,6 +7,10 @@
 
 <h3 align="center">MIUI-Shade</h3>
 
+
+
+
+
   <p align="center">
     A PC-based version of an Android control center.
     <br />
@@ -56,7 +60,7 @@
 
 ## About
 
-https://streamable.com/92bus0.mp4
+https://user-images.githubusercontent.com/97158976/150152881-dbcae5c4-a1d4-4e2e-9310-985feb31d3b9.mp4
 
 MIUI-Shade is a Rainmeter skin that brings the Android control center to Windows. MIUI-Shade includes 2 different color schemes as well as multiple customization options for you to tweak and customize to your liking. **See the video linked above.**
 
