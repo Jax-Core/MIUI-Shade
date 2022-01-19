@@ -56,7 +56,7 @@
 
 ## About
 
-preview.mp4
+![MIUI-Shade](preview.gif)
 
 MIUI-Shade is a Rainmeter skin that brings the Android control center to Windows. MIUI-Shade includes 2 different color schemes as well as multiple customization options for you to tweak and customize to your liking. **See the video linked above.**
 
