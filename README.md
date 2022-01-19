@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Jax-Core/MIUI-Shade">
-    <img src="https://imgur.com/MhwrA7U.png" alt="Logo" width="284" height="192">
+    <img src="https://imgur.com/MhwrA7U.png" alt="Logo" width="384" height="192">
   </a>
 
 <h3 align="center">MIUI-Shade</h3>
