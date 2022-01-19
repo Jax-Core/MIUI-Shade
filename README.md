@@ -132,7 +132,7 @@ You can now proceed to configure media controls for Spotify. Simply follow the s
 
 1. Open Core and head over to the **Modules** section.
 2. Select **MIUI-Shade** from the list and proceed to the **Modules** tab.
-3. Go to the **Media** tab and select **Spotify**
+3. In the **Media** tab select **Spotify**.
 4. Ignore the alert for Spicetify(we've already installed this in the previous step) and press **confirm** on the bottom right.
 5. Refresh MIUI-Shade and your media controls for Spotify should work.
 
@@ -142,8 +142,8 @@ For media controls to work with any website, you will have to install the **[Web
 Once you've installed the extension, you can now proceed to configure media controls for Web Players. Simply follow the steps outlined below:
 
 1. Open Core and head over to the **Modules** section.
-2. Select **MIUI-Shade** from the list and proceed to the **Modules** tab.
-3. Go to the **Media** tab and select **Web**
+2. Select **MIUI-Shade** from the list and proceed to the **Media** tab.
+3. In the **Media** tab select **Web**.
 4. Ignore the alert for WebNowPlaying Companion extension(we've already installed this in the previous step) and press **confirm** on the bottom right.
 5. Refresh MIUI-Shade and your media controls for any website should work.
 
