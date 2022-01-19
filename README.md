@@ -131,7 +131,7 @@ For media controls to work with Spotify, you will have to setup and install **[S
 You can now proceed to configure media controls for Spotify. Simply follow the steps outlined below:
 
 1. Open Core and head over to the **Modules** section.
-2. Select **MIUI-Shade** from the list and proceed to the **Modules** tab.
+2. Select **MIUI-Shade** from the list and proceed to the **Media** tab.
 3. In the **Media** tab select **Spotify**.
 4. Ignore the alert for Spicetify(we've already installed this in the previous step) and press **confirm** on the bottom right.
 5. Refresh MIUI-Shade and your media controls for Spotify should work.
