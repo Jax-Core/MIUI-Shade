@@ -151,10 +151,9 @@ Once you've installed the extension, you can now proceed to configure media cont
 Weather Status, unlike Media Controls, does not require the installation of any additional applications or extensions. As a result, you can simply enable it via the **General** tab. To do so, follow the steps outlined below.
 
 1. Open Core and head over to the **Modules** section.
-2. Select **MIUI-Shade** from the list and proceed to the **Modules** tab.
-3. Select the Media Control module and enable it.
-4. Go to the **General** tab and change `Weather Location` to the location you want the weather status for under **Time & Weather**.
-5. Refresh MIUI-Shade and your weather status should work.
+2. Select **MIUI-Shade** from the list and proceed to the **General** tab.
+3. Under **Time & Weather**, change `Weather Location` to the location you want the weather status for.
+4. Refresh MIUI-Shade and your weather status should work.
 
 
 ## Help and Credits
