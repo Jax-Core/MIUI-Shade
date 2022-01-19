@@ -57,7 +57,7 @@
 
 ## About
 
-![MIUI-Shade](https://gfycat.com/creepycomposedbedbug.gif)
+![MIUI-Shade](preview.gif)
 
 ValliStart is a Rainmeter skin that replaces the standard Windows start menu with an animated, fancy control center. ValliStart includes 8 different color schemes as well as 15+ customization options for you to tweak and customize to your liking. **See the video linked above.**
 
