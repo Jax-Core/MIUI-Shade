@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Jax-Core/MIUI-Shade">
-    <img src="" alt="Logo" width="200" height="200">
+    <img src="https://imgur.com/MhwrA7U.png" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">MIUI-Shade</h3>
@@ -37,7 +37,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-         <li> <a href="#custom-color-schemes">Custom Color Schemes</a></li>
+         <li> <a href="#customization">Customization</a></li>
       </ul>
     </li>
     <li>
