@@ -52,7 +52,7 @@ MeterStyle=Set.String:S |  Set.OptionCat:S
 
 [Option11]
 Meter=String
-Text=Time format: 24(H) 12(I)
+Text=Time format
 MeterStyle=Set.String:S | Set.OptionName:S
 [Set.Div:S19032213138]
 Meter=Shape
@@ -66,14 +66,7 @@ Meter=Shape
 MeterStyle=Set.Div:S
 [Option22]
 Meter=String
-Text=Weather location
-MeterStyle=Set.String:S | Set.OptionName:S
-[Set.Div:S19w2s0328]
-Meter=Shape
-MeterStyle=Set.Div:S
-[Option23]
-Meter=String
-Text=Unit (Metric/Imperial)
+Text=Weather location & units
 MeterStyle=Set.String:S | Set.OptionName:S
 
 ;================================================================================================================================================================================
@@ -134,49 +127,49 @@ Meter=String
 Text=#Detect.Size#
 MeterStyle=Set.String:S | Set.Value:S
 
-[2412:]
+[Button11]
 Meter=Shape
-Shape2=Rectangle ([&Func:returnBool('2412', 'H')] = 0 ? 0 : (150*[Set.S])),0,(150*[Set.S]),(30*[Set.S]),(7*[Set.S]) | Fill Color #Set.Text_Color# | StrokeWidth 0 |
-0Act=[!WriteKeyValue Variables 2412 "I" "#Sec.SaveLocation#"]
-1Act=[!WriteKeyValue Variables 2412 "H" "#Sec.SaveLocation#"]
-MeterStyle=Set.Pick:S
+MeterStyle=Set.Button:S
 Y=([Option11:Y]-#Set.P#+(-30/2+8)*[Set.S])
-[2412:0]
+Act=[!WriteKeyvalue Variables Skin.Name """#JaxCore""" "#@#SecVar.inc"][!WriteKeyvalue Variables Skin.Set_Page GlobalVars "#@#SecVar.inc"][!Refresh]
+[Icon11]
 Meter=String
-Text=12-Hour
-FontColor=[&Func:returnBool('2412', 'H', '#Set.Text_Color#', '#Set.Pri_color#')]
-LeftMouseUpAction=[&Func:GroupVar('#CURRENTSECTION#', '0Act')][!Refresh][!UpdateMeasure Auto_Refresh:M]
-MeterStyle=Set.String:S | Set.PickOption_0:S
-[2412:1]
+Text=[\xe895]
+FontFace=Material Icons Round
+FontSize=(14*[Set.S])
+FontColor=#Set.Subtext_Color#
+MeterStyle=Set.String:S | Set.Value:S
+[Value11]
 Meter=String
-Text=24-hour
-FontColor=[&Func:returnBool('2412', 'H', '#Set.Pri_color#', '#Set.Text_Color#')]
-LeftMouseUpAction=[&Func:GroupVar('#CURRENTSECTION#', '1Act')][!Refresh][!UpdateMeasure Auto_Refresh:M]
-MeterStyle=Set.String:S | Set.PickOption_1:S
+X=(-25*[Set.S])r
+Y=r
+Text=Change global variable
+FontColor=#Set.Subtext_Color#
+MeterStyle=Set.String:S | Set.Value:S
 
 [Weather]
 Meter=Shape
 MeterStyle=Set.Bool:S
 Y=([Option21:Y]-#Set.P#+(-20/2+8)*[Set.S])
 
-[WeatherLocation]
+[Button22]
 Meter=Shape
-MeterStyle=Set.Textbox:S
-Type=Txt
+MeterStyle=Set.Button:S
 Y=([Option22:Y]-#Set.P#+(-30/2+8)*[Set.S])
+Act=[!WriteKeyvalue Variables Skin.Name """#JaxCore""" "#@#SecVar.inc"][!WriteKeyvalue Variables Skin.Set_Page GlobalVars "#@#SecVar.inc"][!Refresh]
+[Icon22]
+Meter=String
+Text=[\xe895]
+FontFace=Material Icons Round
+FontSize=(14*[Set.S])
+FontColor=#Set.Subtext_Color#
+MeterStyle=Set.String:S | Set.Value:S
 [Value22]
 Meter=String
-Text=#gVar.WeatherLocation#
-MeterStyle=Set.String:S | Set.Value:S
-
-[WeatherUnits]
-Meter=Shape
-MeterStyle=Set.Textbox:S
-Type=Txt
-Y=([Option23:Y]-#Set.P#+(-30/2+8)*[Set.S])
-[Value23]
-Meter=String
-Text=#WeatherUnits#
+X=(-25*[Set.S])r
+Y=r
+Text=Change global variable
+FontColor=#Set.Subtext_Color#
 MeterStyle=Set.String:S | Set.Value:S
 
 [ActiveChecker2]
