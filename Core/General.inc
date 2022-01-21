@@ -166,7 +166,7 @@ Type=Txt
 Y=([Option22:Y]-#Set.P#+(-30/2+8)*[Set.S])
 [Value22]
 Meter=String
-Text=#WeatherLocation#
+Text=#gVar.WeatherLocation#
 MeterStyle=Set.String:S | Set.Value:S
 
 [WeatherUnits]
